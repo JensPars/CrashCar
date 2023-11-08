@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Text2Tex: Text-driven Texture Synthesis via Diffusion Models">
-    <meta name="keywords" content="Text2Tex, diffusion, 3D textures, 3D contents, generation">
+    <meta name="description" content="CrashCar101: Procedural Generation for Damage Assessment">
+    <meta name="keywords" content="Procedural generation, Damage assesment, 3D, 3D contents, generation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Text2Tex: Text-driven Texture Synthesis via Diffusion Models</title>
+    <title>CrashCar101: Procedural Generation for Damage Assessment</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -58,33 +58,27 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">Text2Tex: Text-driven Texture Synthesis via Diffusion Models</h1>
+                        <h1 class="title is-1 publication-title">CrashCar101: Procedural Generation for Damage Assessment</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a href="https://niessnerlab.org/members/zhenyu_chen/profile.html">Dave Zhenyu Chen</a><sup>1</sup>,</span>
+                                <a href="https://www.linkedin.com/in/jens-parslov/">Jens Parslov</a><sup>1</sup>,</span>
                             <span class="author-block">
-                                <a href="https://niessnerlab.org/members/yawar_siddiqui/profile.html">Yawar Siddiqui</a><sup>1</sup>,</span>
+                                <a href="https://www.linkedin.com/in/erik-riise-97a6a31a6/">Erik Riise</a><sup>1</sup>,</span>
                             <span class="author-block">
-                                <a href="https://research.snap.com/team/team-member.html#hsin-ying-lee">Hsin-Ying Lee</a><sup>2</sup>,</span>
-                            <span class="author-block">
-                                <a href="https://research.snap.com/team/team-member.html#sergey-tulyakov">Sergey Tulyakov</a><sup>2</sup>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias
-                                    Nießner</a><sup>1</sup>,
+                                <a href="https://orbit.dtu.dk/en/persons/dimitrios-papadopoulos">Dim P. Papadopoulos</a><sup>1,2</sup>,</span>
                             </span>
                         </div>
 
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block"><sup>1</sup>Technical University of Munich,</span>
-                            <span class="author-block"><sup>2</sup>Snap Research</span>
+                            <span class="author-block"><sup>1</sup>Technical University of Denmark,</span>
+                            <span class="author-block"><sup>2</sup>Pioneer Center for AI</span>
                         </div>
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- PDF Link. -->
                                 <span class="link-block">
-                                    <a href="static/Text2Tex.pdf"
+                                    <a href="static/2435.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
@@ -93,7 +87,7 @@
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a class="external-link button is-normal is-rounded is-dark" href="static/Text2Tex.pdf">
+                                    <a class="external-link button is-normal is-rounded is-dark" href="static/2435.pdf">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
                                         </span>
@@ -114,7 +108,7 @@
 
                                 <!-- Github Link. -->
                                 <span class="link-block">
-                                    <a href="https://github.com/daveredrum/Text2Tex" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://github.com/" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -134,7 +128,7 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <img src="./static/teaser/teaser.jpg" width="200%" />
+                <img src="./static/teaser/teaser.pdf" width="200%" />
                 <h2 class=" subtitle has-text-centered" style="padding-top: 10px">
                     <span class="dnerf">In this paper, we are interested in addressing the problem of damage assessment for vehicles, such as cars. This task requires not only detecting the location and the extent of the damage but also identifying the damaged part. To train a computer vision system for the semantic part and damage segmentation in images, we need to manually annotate images with costly pixel annotations for both part categories and damage types. To overcome this need, we propose to use synthetic data to train these models. Synthetic data can provide samples with high variability, pixel-accurate annotations, and arbitrarily large training sets without any human intervention. We propose a procedural generation pipeline that damages 3D car models and we obtain synthetic 2D images of damaged cars paired with pixel-accurate annotations for part and damage categories. To validate our idea, we execute our pipeline and render our CrashCar101 dataset. We run experiments on three real datasets for the tasks of part and damage segmentation. For part segmentation, we show that the segmentation models trained on a combination of real data and our synthetic data outperform all models trained only on real data. For damage segmentation, we show the sim2real transfer ability of CrashCar101.
                 </h2>
@@ -177,7 +171,10 @@
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Video</h2>
                     <div class="publication-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ve8tJ9LlcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <video width="560" height="315" controls>
+                            <source src="CC101.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -193,14 +190,9 @@
             <div class="columns is-centered" style="margin-top: 15px">
                 <div class="column is-full-width">
                     <h2 class="title is-4">Method Overview</h2>
-                    <img src="./static/teaser/overview.jpg"/>
+                    <img src="./static/teaser/MainFigure.pdf"/>
                     <div class="content has-text-justified" style="padding-top: 15px">
-                        <p>In <span class="dnerf">Text2Tex</span>, we progressively generate the texture via a generate-then-refine scheme</p>
-                        <p> In progressive texture generation, we start by rendering the object from an initial preset viewpoint. We generate a new appearance according to the input prompt via
-                            a depth-to-image diffusion model, and project the generated image back to the partial texture. Then, we repeat this process
-                            until the last preset viewpoint to output the initial textured mesh.</p>
-                        <p>In the subsequent texture refinement, we update
-                            the initial texture from a sequence of automatically selected viewpoints to refine the stretched and blurry artifacts.</p>
+                        <p> Overview of our proposed procedural generation pipeline. We first acquire and annotate 3D model cars, and then we apply procedural generation to manipulate the texture and shape of the car to generate synthetic damage types. Subsequently, we place a camera into the scene and assign a scene environment and car color. Finally, we render a 2D image paired with perfect ground-truth pixel annotations for parts and damages. Given a set of 3D model cars with part annotations, this process is fully automatic, allowing us to render an arbitrarily large amount of data. </p>
                     </div>
 
                 </div>
@@ -390,10 +382,10 @@
             <h2 class="title">BibTeX</h2>
             <pre>
 <code>
-@article{chen2023text2tex,
-    title={Text2Tex: Text-driven Texture Synthesis via Diffusion Models},
-    author={Chen, Dave Zhenyu and Siddiqui, Yawar and Lee, Hsin-Ying and Tulyakov, Sergey and Nie{\ss}ner, Matthias},
-    journal={arXiv preprint arXiv:2303.11396},
+@article{TODO,
+    title={CrashCar101: Procedural Generation for Damage Assessment},
+    author={TODO},
+    journal={TODO},
     year={2023},
 }
 </code></pre>
@@ -404,10 +396,10 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <a class="icon-link" href="static/Text2Tex.pdf">
+                <a class="icon-link" href="static/2435.pdf">
                     <i class="fas fa-file-pdf"></i>
                 </a>
-                <a class="icon-link" href="https://github.com/daveredrum" class="external-link" disabled>
+                <a class="icon-link" href="https://github.com/"" class="external-link" disabled>
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -416,10 +408,10 @@
                     <div class="content">
                         <p style="text-align:center">
                             Source code mainly borrowed from <a href="https://niessnerlab.org/members/yawar_siddiqui/profile.html">Yawar Siddiqui</a>'s <a
-                                href="https://nihalsid.github.io/texturify/">Texturify website</a>.
+                                href="https://nihalsid.github.io/texturify/">Texturify website</a> TODO add text2tex template.
                         </p>
                         <p style="text-align:center">
-                            Please contact <a href="https://niessnerlab.org/members/zhenyu_chen/profile.html">Dave Zhenyu Chen</a> for feedback and questions.
+                            Please contact <a href="TODO"> someones name</a> for feedback and questions.
                         </p>
 
                     </div>
